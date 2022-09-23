@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  /* PRIMARY */
+  --dark--cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  /* NEUTRAL  */
+  --dark-gray: hsl(0, 0%, 59%);
+  --white-soft: hsl(0 0% 97%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 24px;
+  overflow: hidden;
+  background-color: var(--dark--cyan);
+}
+.container {
+  background-color: var(--white-soft);
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 12px;
+  max-width: 324px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 3px 29px 0px;
+}
+.background {
+  position: relative;
+}
+.background-container {
+  border-radius: 12px 12px 0 0;
+}
+.profile-pic {
+  position: absolute;
+  width: 5rem;
+  border-radius: 50%;
+  border: 5px solid var(--white-soft);
+  left: 50%;
+  top: 4.5rem;
+  transform: translateX(-50%);
+  /* translate: 0 -2.6rem; */
+}
+.profile-name {
+  color: var(--very-dark-desaturated-blue);
+  margin-top: 3rem;
+}
+.profile-name > span {
+  color: var(--dark-grayish-blue);
+  font-weight: 400;
+}
+.city {
+  color: var(--dark-grayish-blue);
+  font-size: 0.9rem;
+  margin-top: 12px;
+}
+.divider {
+  color: black;
+  border-bottom: 0.1px solid hsl(227deg 10% 46% / 17%);
+  margin-top: 28px;
+}
+.list-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--very-dark-desaturated-blue);
+  font-weight: 700;
+  padding: 28px 44px;
+}
+.list-items div > span {
+  color: var(--very-dark-desaturated-blue);
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  display: block;
+  margin-top: 5px;
+}
+.bg-top {
+  position: absolute;
+  z-index: -99;
+  top: -50%;
+  left: -20%;
+}
+.bg-bottom {
+  position: absolute;
+  bottom: -50%;
+  right: -20%;
+  z-index: -99;
+}
+.attribution {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.attribution a {
+  font-size: 0.8rem;
+  color: hsl(228, 45%, 44%);
+}
